@@ -36,7 +36,7 @@ async function generateHooks(form) {
     messages: [{ role: 'user', content: buildPrompt(form) }],
   })
 
-  const raw = message.content[0].text.trim()
+  const raw = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '')
   const parsed = JSON.parse(raw)
   if (!Array.isArray(parsed) || parsed.length !== 5) {
     throw new Error('Răspuns neașteptat de la AI.')
