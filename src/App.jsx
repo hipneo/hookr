@@ -10,13 +10,10 @@ export default function App() {
       <main className="hero">
         <div className="badge">AI-Powered</div>
         <h1 className="headline">
-          Hookr — AI-powered social media hooks<br />
-          <span className="accent">for restaurants.</span>
+          Hookr — Conținut magnetic pentru restaurantele tale
         </h1>
-        <p className="subline">Built for Romanian restaurants</p>
         <p className="subtext">
-          Generate scroll-stopping captions, stories, and posts in seconds.
-          Built for chefs, owners, and marketers who have food to show — not time to waste.
+          Generează hook-uri irezistibile pentru social media, personalizate pentru brandul tău
         </p>
         <button className="cta">Get Started</button>
       </main>
